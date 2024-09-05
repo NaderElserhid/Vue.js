@@ -16,8 +16,9 @@ const count = ref(0)
 
   <main>
     <TheWelcome />
-    <h1>moooon</h1>
-    <button @click="count++">Count is: {{ count }}</button>
+    <h1>Count is: {{ count }}</h1>
+    <button @click="count++"> up </button>
+    <button @click="count--"> down</button>
   </main>
 </template>
 
@@ -50,6 +51,10 @@ header {
 }
 button {
   font-weight: bold;
-  background-color: #eee;
+  background-color: #34495e;
+  padding: 10px;
+  margin: 5px;
+   border-radius: 5px;
+   color: white;
 }
 </style>
